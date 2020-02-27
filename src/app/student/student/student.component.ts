@@ -11,6 +11,7 @@ export class StudentComponent implements OnInit {
    data:any;
   stu=this.ds.loggedinUser;
   fee=this.ds.loggedinUser;
+  placement=this.ds.loggedinUser;
 
   constructor(private ds:DataService) { }
 
