@@ -1,0 +1,132 @@
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-xl-6 col-md-12">
+                <div class="card user-card-full">
+                    <div class="row m-l-0 m-r-0">
+                        <div class="col-sm-4 bg-c-lite-green user-profile">
+                            <div class="card-block text-center text-white">
+                                <div class="m-b-25"> <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image"> </div>
+                                <!-- <h6 class="f-w-600">Hembo Tingor</h6>
+                                <p>Web Designer</p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i> -->
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block">
+                                <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600">Name</p>
+                                        <h6 class="text-muted f-w-400">{{this.stu.fullname}}</h6>
+                                        <p class="m-b-10 f-w-600">DOB</p>
+                                        <h6 class="text-muted f-w-400">{{this.stu.date}}</h6>
+                                        <p class="m-b-10 f-w-600">Phone</p>
+                                        <h6 class="text-muted f-w-400">{{this.stu.phonenumber}}</h6>
+                                       
+                                        
+                                    </div>
+                                    <!-- <div class="col-sm-3">
+
+                                    </div>&nbsp; -->
+                                    <div class="col-sm-6">
+                                        <p class="m-b-10 f-w-600">Graduation Branch</p>
+                                        <h6 class="text-muted f-w-400">{{this.stu.gbranch}}</h6>
+                                        
+                                        <p class="m-b-10 f-w-600">Graduation YOJ</p>
+                                        <h6 class="text-muted f-w-400">{{this.stu.gyear}}</h6>
+
+                                        <p class="m-b-10 f-w-600">Gmail</p>
+                                        <h6 class="text-muted f-w-400">{{this.stu.email}}</h6>
+                                        
+                                    </div>
+                                </div>
+                                <!-- <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Projects</h6> -->
+                                
+                                    
+                                    
+                                
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <button type="submit" class="btn btn-info"  (click)="splacementData('placement')" data-toggle="modal" data-target="#my-modal">PlacementDetails</button>
+                <!-- <a routerLink="placement" class="btn btn-primary">placement</a>&nbsp;
+                  <a routerLink="fee" class="btn btn-primary">fee</a> -->
+            </footer>
+        </div>
+    </div>
+</div>
+ 
+<!-- <div id="my-modal" class="modal fade"  role="dialog" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-8">
+                     <form name="form" #Form="ngForm">
+                         <div class="form-group">
+                         <label for="n">FullName</label>
+                         <input type="text" id="n" name="fullname" #fullname="ngModel"   autocomplete="off" required placeholder="FullName" class="form-control" [(ngModel)]="searchTerm">
+                        </div>
+                      </form>  
+                <p>Content</p>
+            </div>
+        </div>
+    </div>
+</div> -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- <h4 class="text-center">welcome to {{this.stu.fullname}}</h4>
+
+                <table class="table table-striped">
+     
+
+                    <th>Fullname</th>
+                    <th>DateOfBirth</th>
+                    <th>Email</th>
+                    <th>PNumber</th>
+                   <th>Address</th>
+                    <th>City</th>
+                    <th>Pincode</th>
+                    <th>State</th>
+                    <th>Qualifer</th>
+                    <th>Inter</th>
+                    <th>Graduation Branch</th>
+                    <th>Graduation YOJ</th>
+                   
+                    
+                 
+                    <tr *ngFor="let i of data">
+                        <td>{{i.fullname}}</td>
+                        <td>{{i.date}}</td>
+                        <td>{{i.email}}</td>
+                        <td>{{i.phonenumber}}</td>
+                        <td>{{i.add}}</td>
+                        <td>{{i.city}}</td>
+                        <td>{{i.pincode}}</td>
+                        <td>{{i.state}}</td>
+                        <td>{{i.qua}}</td>
+                        <td>{{i.inm}}</td>
+                        <td>{{i.gbranch}}</td>
+                        <td>{{i.gyear}}</td>
+                        <td>
+                        </table> 
+            -->
+
+
+                        
+
+<router-outlet></router-outlet>
