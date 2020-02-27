@@ -75,6 +75,14 @@ export class DataService {
   readdata(stu):Observable<any>{
     return this.hc.get<any>(`/readOne/${stu.studentid}`)
   }
+  readfee(fee):Observable<any>{
+    console.log('fee',fee);
+    
+    return this.hc.get<any>(`/readFee/${fee.studentid}`)
+  }
+  readPlacement(placements):Observable<any>{
+    return this.hc.get<any>(`/readPlacement/${placements.gbranch}`)
+  }
 loggedinUser;
 loggedinStatus:boolean=false;
 

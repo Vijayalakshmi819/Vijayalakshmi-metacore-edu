@@ -435,6 +435,55 @@ else
 })
 })
 
+app.get('/readFee/:fee',(req,res)=>{
+    console.log("fee",req.params);
+    
+    dbo.collection("fee").find({studentid:req.params.fee}).toArray((err,data)=>
+    {
+        console.log
+if(err)
+{
+   console.log("err is reading",err)
+}
+  else if(data==null)
+  {
+     res.send({message:"no data found"})
+    console.log("data is empty");
+    
+  }  
+else
+{
+    console.log(data);
+    
+   res.send({message:data})
+}
+})
+})
+//placement
+app.get('/readPlacement/:placements',(req,res)=>{
+    console.log("branch",req.params);
+    
+    dbo.collection("placements").find({gbranch:req.params.placements}).toArray((err,data)=>
+    {
+        
+if(err)
+{
+   console.log("err is reading",err)
+}
+  else if(data==null)
+  {
+     res.send({message:"no data found"})
+    console.log("data is empty");
+    
+  }  
+else
+{
+    console.log(data);
+    
+   res.send({message:data})
+}
+})
+})
 
 //login with student id
 app.post('/login',(req,res)=>{
