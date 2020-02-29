@@ -32,8 +32,9 @@ export class StudentComponent implements OnInit {
         console.log("place",this.data1)
       })
   }
-  splacementData(obj)
-{
-  
+ 
+
 }
-}
+
+
+

@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   }
   submitData(obj)
   {
-    console.log(obj);
+    console.log("login success",obj);
     if(obj.role=="admin"){
 if(obj.username!=="admin")
 {
@@ -40,7 +40,7 @@ else if(obj.password!=="admin")
 }
 //studentlogin
 else if(obj.role=="student"){
-  console.log(obj);
+  //console.log(obj);
   this.ds.loginstudent(obj).subscribe((res)=>{
     if(res["message"]=="invalid-studentid"){
       alert("invalid-username")

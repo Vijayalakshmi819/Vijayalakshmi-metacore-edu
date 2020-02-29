@@ -161,7 +161,7 @@ else
     })
     })
 
-//read by year
+//read by year in common component
     app.post('/readbyyear',(req,res)=>{
         console.log(req.body);
         yr=(+req.body.gyear); 
@@ -182,7 +182,7 @@ else
     })
 
 
-//register student handler (post)
+//register student handler (post) to genearate id when registration is success
 
 app.use(exp.json());
 app.post('/save',(request,response)=>{
@@ -247,7 +247,7 @@ app.post('/save',(request,response)=>{
                         }
                         else{
                             //response.send({message:"updated"})
-                            //to send email
+                            //to send email when registration is success
 const transport = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
@@ -380,6 +380,7 @@ catch (e){
 }
 });
 
+//get fee details in fee component
 
 app.get('/readfee',(req,res)=>{
     console.log(req.params);
@@ -434,7 +435,7 @@ else
 }
 })
 })
-
+//to get fee details in student module
 app.get('/readFee/:fee',(req,res)=>{
     console.log("fee",req.params);
     
@@ -459,7 +460,7 @@ else
 }
 })
 })
-//placement
+//placement to get data in student module
 app.get('/readPlacement/:placements',(req,res)=>{
     console.log("branch",req.params);
     
